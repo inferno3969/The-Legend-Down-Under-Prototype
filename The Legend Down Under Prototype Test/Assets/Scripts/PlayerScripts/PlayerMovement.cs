@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public enum PlayerState
@@ -16,14 +17,17 @@ public class PlayerMovement : MonoBehaviour
 
     public PlayerState currentState;
     public float speed;
+    public Vector2 velocity = Vector2.zero;
     private Rigidbody2D myRigidbody;
-    private Vector3 change;
+    public Vector3 change;
     private Animator animator;
     public VectorValue startingPosition;
     public FloatValue currentHealth;
     public SignalSender playerHealthSignal;
     public Inventory playerInventory;
     public SpriteRenderer receivedItemSprite;
+    public SceneManager gameOver;
+    private bool onIce = false;
 
     // Start is called before the first frame update
     void Start()
@@ -43,10 +47,12 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetAxisRaw("Horizontal") != 0)
         {
             change.x = Input.GetAxisRaw("Horizontal") * Time.deltaTime * speed;
+            velocity = new Vector2(1, 0);
         }
         else if (Input.GetAxisRaw("Vertical") != 0)
         {
             change.y = Input.GetAxisRaw("Vertical") * Time.deltaTime * speed;
+            velocity = new Vector2(0, 1);
         }
         Update();
     }
@@ -74,7 +80,7 @@ public class PlayerMovement : MonoBehaviour
         currentState = PlayerState.attack;
         yield return null;
         animator.SetBool("attacking", false);
-        yield return new WaitForSeconds(.3f);
+        yield return new WaitForSeconds(.75f);
         if (currentState != PlayerState.interact)
         {
             currentState = PlayerState.walk;
@@ -135,8 +141,9 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             this.gameObject.SetActive(false);
+            SceneManager.LoadScene("StartMenu");
         }
-        
+
     }
 
     private IEnumerator KnockCo(float knockTime)

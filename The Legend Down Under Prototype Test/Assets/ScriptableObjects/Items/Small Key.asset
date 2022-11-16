@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53493580579a848e18890ff97fea7058, type: 3}
   m_Name: Small Key
   m_EditorClassIdentifier: 
-  itemSprite: {fileID: 21300000, guid: b28ae9032ea5d451593542da954a5a61, type: 3}
-  itemDescriptiopn: It's a small key. Is there a door nearby?
+  itemSprite: {fileID: 21300000, guid: 6c2b70f61632b47a3a69ff1305205b3f, type: 3}
+  itemDescription: It's a small key! There probably is a locked door nearby...
   isKey: 1
+  isBossKey: 0

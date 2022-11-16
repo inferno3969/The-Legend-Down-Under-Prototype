@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a4dd01c843b084491a83d22fadde8031
+guid: 5f160ec5d7b64438e9be7800210e259d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -5785,10 +5785,10 @@ TextureImporter:
       Inner_82: -339792884
       Inner_165: -1304356255
       Inner_229: -1703695811
-      Inner_38: -459638750
       Inner_31: 2111076554
-      Inner_53: -732663513
       Inner_154: 423818365
+      Inner_53: -732663513
+      Inner_38: -459638750
       Inner_56: -956546801
       Inner_250: -1925015815
       Inner_13: 1771340410

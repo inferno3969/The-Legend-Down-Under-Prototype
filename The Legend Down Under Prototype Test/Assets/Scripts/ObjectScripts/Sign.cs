@@ -5,18 +5,19 @@ using UnityEngine.UI;
 
 public class Sign : Interactable
 {
+
     public GameObject dialogBox;
     public Text dialogText;
     public string dialog;
 
-    // Start is called before the first frame update
+    // Use this for initialization
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
-    void Update()
+    public virtual void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && playerInRange)
         {
@@ -36,9 +37,10 @@ public class Sign : Interactable
     {
         if (other.CompareTag("Player") && !other.isTrigger)
         {
+            context.Raise();
             playerInRange = false;
             dialogBox.SetActive(false);
-            context.Raise();
         }
     }
+
 }

@@ -6,12 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/StartMenu.unity
+    guid: 49491066cd3b548eb927cdc418c6f4dc
+  - enabled: 1
+    path: Assets/Scenes/HouseCutscene.unity
+    guid: 0f902aa6f940547b08d68147dc7e6501
   - enabled: 1
     path: Assets/Scenes/HouseInterior.unity
     guid: 80a47d4060cd44df9b2d4e649d1063ec
   - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
     path: Assets/Scenes/Dungeon.unity
     guid: 40904363d6f8d43db97e802d34cf6b55
+  - enabled: 1
+    path: Assets/Scenes/IceCave.unity
+    guid: 82ba58ea6abca451189cd05fb91b15f8
   m_configObjects: {}

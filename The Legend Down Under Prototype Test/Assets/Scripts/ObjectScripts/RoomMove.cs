@@ -22,24 +22,30 @@ public class RoomMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && !other.isTrigger) 
+        if (other.CompareTag("Player") && !other.isTrigger)
         {
             cam.minPosition += cameraChange;
             cam.maxPosition += cameraChange;
             other.transform.position += playerChange;
-            if (needText) 
+            if (this.GetComponent<MusicChange>() != null)
             {
-                StartCoroutine(placeNameCo());
+                // stop current sound track and play next one when we hit the trigger
+                this.GetComponent<MusicChange>().ChangeMusic();
             }
+        }
+        if (needText == true)
+        {
+            StartCoroutine(placeNameCo());
         }
     }
 
-    private IEnumerator placeNameCo() 
+
+    private IEnumerator placeNameCo()
     {
         text.SetActive(true);
         placeText.text = placeName;

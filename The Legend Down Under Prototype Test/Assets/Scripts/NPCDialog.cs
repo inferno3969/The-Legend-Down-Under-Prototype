@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NPCDialog : MonoBehaviour
+public class NPCDialog : Interactable
 {
     public GameObject dialogBox;
     public Text dialogText;
     public string dialog;
-    public bool playerInRange;
     public AudioSource playSound;
 
     // Start is called before the first frame update
@@ -30,8 +29,10 @@ public class NPCDialog : MonoBehaviour
             {
                 dialogBox.SetActive(true);
                 dialogText.text = dialog;
-                playSound.Play();
-                
+                if (playSound != null)
+                {
+                    playSound.Play();
+                } 
             }
         }
     }
@@ -40,6 +41,7 @@ public class NPCDialog : MonoBehaviour
     {
         if (other.CompareTag("Player")) 
         {
+            context.Raise();
             playerInRange = true;
         }
     }
@@ -49,6 +51,7 @@ public class NPCDialog : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInRange = false;
+            context.Raise();
             dialogBox.SetActive(false);
         }
     }
