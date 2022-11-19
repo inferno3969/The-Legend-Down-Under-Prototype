@@ -62,4 +62,16 @@ public class CameraMovement : MonoBehaviour
         }
         return position;
     }
+
+    public void BeginKick()
+    {
+        anim.SetBool("kickActive", true);
+        StartCoroutine(KickCo());
+    }
+
+    public IEnumerator KickCo()
+    {
+        yield return null;
+        anim.SetBool("kickActive", false);
+    }
 }
