@@ -453,11 +453,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 0
   speed: 4
+  velocity: {x: 0, y: 0}
+  change: {x: 0, y: 0, z: 0}
   startingPosition: {fileID: 11400000, guid: 6459ee645e8264faa849aa0b6b520873, type: 2}
   currentHealth: {fileID: 11400000, guid: 391871b6341804a92b5b537f28dc2feb, type: 2}
   playerHealthSignal: {fileID: 11400000, guid: 5c07ebe41c699474baa7f5b04af1082a, type: 2}
+  playerHit: {fileID: 11400000, guid: 1a3236b3ce56a4a0c859949709cc940d, type: 2}
   playerInventory: {fileID: 11400000, guid: 5fd819300003e4e62bbbcbb3025222cc, type: 2}
   receivedItemSprite: {fileID: 1080929092}
+  flashColor: {r: 0.9529412, g: 0, b: 0, a: 0.59607846}
+  regularColor: {r: 1, g: 1, b: 1, a: 1}
+  flashDuration: 0.07
+  numOfFlashes: 4
+  triggerCollider: {fileID: 1353396582}
+  mySprite: {fileID: 2644372437731788991}
 --- !u!95 &2644372437731788987
 Animator:
   serializedVersion: 4

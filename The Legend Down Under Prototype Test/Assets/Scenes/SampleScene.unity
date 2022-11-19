@@ -29127,16 +29127,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!212 &1991466468 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 2644372437731788991, guid: d335c6e0b45f445c099035be67888582, type: 3}
-  m_PrefabInstance: {fileID: 2644372436800291501}
-  m_PrefabAsset: {fileID: 0}
---- !u!61 &1991466469 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 1353396582, guid: d335c6e0b45f445c099035be67888582, type: 3}
-  m_PrefabInstance: {fileID: 2644372436800291501}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &52310454956565270
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29330,50 +29320,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2644372437731788985, guid: d335c6e0b45f445c099035be67888582, type: 3}
-      propertyPath: mySprite
-      value: 
-      objectReference: {fileID: 1991466468}
-    - target: {fileID: 2644372437731788985, guid: d335c6e0b45f445c099035be67888582, type: 3}
-      propertyPath: playerHit
-      value: 
-      objectReference: {fileID: 11400000, guid: 1a3236b3ce56a4a0c859949709cc940d, type: 2}
-    - target: {fileID: 2644372437731788985, guid: d335c6e0b45f445c099035be67888582, type: 3}
-      propertyPath: flashColor.a
-      value: 0.59607846
-      objectReference: {fileID: 0}
-    - target: {fileID: 2644372437731788985, guid: d335c6e0b45f445c099035be67888582, type: 3}
-      propertyPath: flashColor.r
-      value: 0.9529412
-      objectReference: {fileID: 0}
-    - target: {fileID: 2644372437731788985, guid: d335c6e0b45f445c099035be67888582, type: 3}
-      propertyPath: numOfFlashes
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2644372437731788985, guid: d335c6e0b45f445c099035be67888582, type: 3}
-      propertyPath: flashDuration
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 2644372437731788985, guid: d335c6e0b45f445c099035be67888582, type: 3}
-      propertyPath: regularColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2644372437731788985, guid: d335c6e0b45f445c099035be67888582, type: 3}
-      propertyPath: regularColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2644372437731788985, guid: d335c6e0b45f445c099035be67888582, type: 3}
-      propertyPath: regularColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2644372437731788985, guid: d335c6e0b45f445c099035be67888582, type: 3}
-      propertyPath: regularColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2644372437731788985, guid: d335c6e0b45f445c099035be67888582, type: 3}
-      propertyPath: triggerCollider
-      value: 
-      objectReference: {fileID: 1991466469}
     - target: {fileID: 2644372437731788989, guid: d335c6e0b45f445c099035be67888582, type: 3}
       propertyPath: m_Name
       value: Player
@@ -29421,18 +29367,6 @@ PrefabInstance:
     - target: {fileID: 2644372437731788990, guid: d335c6e0b45f445c099035be67888582, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4772959620075474714, guid: d335c6e0b45f445c099035be67888582, type: 3}
-      propertyPath: m_TargetTexture
-      value: 
-      objectReference: {fileID: 8400000, guid: 486393c7e0b554c64bdfab2f8348bab7, type: 2}
-    - target: {fileID: 4772959620075474714, guid: d335c6e0b45f445c099035be67888582, type: 3}
-      propertyPath: orthographic size
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 7579898667403144293, guid: d335c6e0b45f445c099035be67888582, type: 3}
-      propertyPath: m_TagString
-      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d335c6e0b45f445c099035be67888582, type: 3}
