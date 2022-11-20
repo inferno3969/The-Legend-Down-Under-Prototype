@@ -464,6 +464,8 @@ MonoBehaviour:
   receivedItemSprite: {fileID: 1080929092}
   swordSwing: {fileID: 1788926101}
   isAttacking: 0
+  projectile: {fileID: 4512762004465601977, guid: 146528ed260004d7b929eab084b7cc74, type: 3}
+  bow: {fileID: 0}
   flashColor: {r: 0.9529412, g: 0, b: 0, a: 0.59607846}
   regularColor: {r: 1, g: 1, b: 1, a: 1}
   flashDuration: 0.07
