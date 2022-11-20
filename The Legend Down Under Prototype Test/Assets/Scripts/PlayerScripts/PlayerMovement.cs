@@ -28,6 +28,17 @@ public class PlayerMovement : MonoBehaviour
     public Inventory playerInventory;
     public SpriteRenderer receivedItemSprite;
     public SceneManager gameOver;
+    public AudioSource swordSwing;
+
+    // this bool is important to prevent player from
+    // being able to spam thr attack button
+    // and also prevents Player sprite from
+    // moving while attacking
+    public bool isAttacking = false;
+
+    [Header("Projectile Stuff")]
+    public GameObject projectile;
+    public GameObject bow;
 
     [Header("IFrame stuff")]
     public Color flashColor;
@@ -72,9 +83,15 @@ public class PlayerMovement : MonoBehaviour
         {
             return;
         }
-        if (Input.GetButtonDown("Attack") && currentState != PlayerState.attack && currentState != PlayerState.stagger)
+        if (Input.GetButtonDown("Attack") && currentState != PlayerState.attack && currentState != PlayerState.stagger
+            && !isAttacking)
         {
             StartCoroutine(AttackCo());
+        }
+        else if (Input.GetKeyDown(KeyCode.M) && currentState != PlayerState.attack && currentState != PlayerState.stagger
+            && !isAttacking)
+        {
+            StartCoroutine(SecondAttackCo());
         }
         else if (currentState == PlayerState.walk || currentState == PlayerState.idle)
         {
@@ -84,15 +101,57 @@ public class PlayerMovement : MonoBehaviour
 
     private IEnumerator AttackCo()
     {
+        isAttacking = true;
         animator.SetBool("attacking", true);
         currentState = PlayerState.attack;
+        if (swordSwing != null)
+        {
+            swordSwing.Play();
+        }
         yield return null;
         animator.SetBool("attacking", false);
-        yield return new WaitForSeconds(.75f);
+        yield return new WaitForSeconds(.3f);
         if (currentState != PlayerState.interact)
         {
             currentState = PlayerState.walk;
         }
+        yield return new WaitForSeconds(.25f);
+        isAttacking = false;
+    }
+
+    private IEnumerator SecondAttackCo()
+    {
+        //animator.SetBool("attacking", true);
+        isAttacking = true;
+        currentState = PlayerState.attack;
+        yield return null;
+        MakeArrow();
+        //animator.SetBool("attacking", false);
+        yield return new WaitForSeconds(.3f);
+        if (currentState != PlayerState.interact)
+        {
+            currentState = PlayerState.walk;
+        }
+        yield return new WaitForSeconds(.25f);
+        isAttacking = false;
+    }
+
+    private void MakeArrow()
+    {
+        //if (playerInventory.currentMagic > 0)
+        //{
+            Vector2 temp = new Vector2(animator.GetFloat("moveX"), animator.GetFloat("moveY"));
+            Arrow arrow = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Arrow>();
+            arrow.Setup(temp, ChooseArrowDirection());
+            //playerInventory.ReduceMagic(arrow.magicCost);
+            //reduceMagic.Raise();
+        //}
+    }
+
+    Vector3 ChooseArrowDirection()
+    {
+        float temp = Mathf.Atan2(animator.GetFloat("moveY"), animator.GetFloat("moveX")) * Mathf.Rad2Deg;
+        return new Vector3(0, 0, temp);
     }
 
     public void RaiseItem()
@@ -117,7 +176,7 @@ public class PlayerMovement : MonoBehaviour
 
     void UpdateAnimationAndMove()
     {
-        if (change != Vector3.zero)
+        if (change != Vector3.zero && !isAttacking)
         {
             MoveCharacter();
             animator.SetFloat("moveX", change.x);

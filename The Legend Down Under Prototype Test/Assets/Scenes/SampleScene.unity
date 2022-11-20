@@ -10018,6 +10018,14 @@ PrefabInstance:
       propertyPath: attackRadius
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1680665767040725665, guid: 7fc4b163e727243478aa1592cc1c24c6, type: 3}
+      propertyPath: enemyHitSound
+      value: 
+      objectReference: {fileID: 1123597369}
+    - target: {fileID: 1680665767040725665, guid: 7fc4b163e727243478aa1592cc1c24c6, type: 3}
+      propertyPath: enemyDeathSound
+      value: 
+      objectReference: {fileID: 1455535987}
     - target: {fileID: 2970588463422294747, guid: 7fc4b163e727243478aa1592cc1c24c6, type: 3}
       propertyPath: m_Name
       value: Normal Log (1)
@@ -10214,7 +10222,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1013b81278c2640c9b24631d15466ec8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17131,6 +17139,11 @@ Transform:
   m_Father: {fileID: 653536259}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1123597369 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1601464502339499311, guid: 7607782d94fce40d9b3286b5b80696d2, type: 3}
+  m_PrefabInstance: {fileID: 1579779610}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1154023096 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7405650744792733625, guid: 886ab51e5076a4755ad8d895686caf04, type: 3}
@@ -26377,6 +26390,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75070b0825945447fbc094e18502f4f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &1455535987 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1601464502619031901, guid: 7607782d94fce40d9b3286b5b80696d2, type: 3}
+  m_PrefabInstance: {fileID: 1579779610}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1468086521
 GameObject:
   m_ObjectHideFlags: 0
@@ -26589,6 +26607,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1579779610
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1601464502542897936, guid: 7607782d94fce40d9b3286b5b80696d2, type: 3}
+      propertyPath: m_Name
+      value: Enemy Sound Effects
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601464502542897938, guid: 7607782d94fce40d9b3286b5b80696d2, type: 3}
+      propertyPath: m_RootOrder
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601464502542897938, guid: 7607782d94fce40d9b3286b5b80696d2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 479.02118
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601464502542897938, guid: 7607782d94fce40d9b3286b5b80696d2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 431.18555
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601464502542897938, guid: 7607782d94fce40d9b3286b5b80696d2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.732904
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601464502542897938, guid: 7607782d94fce40d9b3286b5b80696d2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601464502542897938, guid: 7607782d94fce40d9b3286b5b80696d2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601464502542897938, guid: 7607782d94fce40d9b3286b5b80696d2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601464502542897938, guid: 7607782d94fce40d9b3286b5b80696d2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601464502542897938, guid: 7607782d94fce40d9b3286b5b80696d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601464502542897938, guid: 7607782d94fce40d9b3286b5b80696d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601464502542897938, guid: 7607782d94fce40d9b3286b5b80696d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7607782d94fce40d9b3286b5b80696d2, type: 3}
 --- !u!1 &1599673180
 GameObject:
   m_ObjectHideFlags: 0
@@ -28786,6 +28861,14 @@ PrefabInstance:
       propertyPath: attackRadius
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1680665767040725665, guid: 7fc4b163e727243478aa1592cc1c24c6, type: 3}
+      propertyPath: enemyHitSound
+      value: 
+      objectReference: {fileID: 1123597369}
+    - target: {fileID: 1680665767040725665, guid: 7fc4b163e727243478aa1592cc1c24c6, type: 3}
+      propertyPath: enemyDeathSound
+      value: 
+      objectReference: {fileID: 1455535987}
     - target: {fileID: 2970588463422294747, guid: 7fc4b163e727243478aa1592cc1c24c6, type: 3}
       propertyPath: m_Name
       value: Normal Log (2)
@@ -29320,9 +29403,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1080929090, guid: d335c6e0b45f445c099035be67888582, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2090355125, guid: d335c6e0b45f445c099035be67888582, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2644372437439713655, guid: d335c6e0b45f445c099035be67888582, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2644372437731788985, guid: d335c6e0b45f445c099035be67888582, type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 4512762004465601977, guid: 146528ed260004d7b929eab084b7cc74, type: 3}
     - target: {fileID: 2644372437731788989, guid: d335c6e0b45f445c099035be67888582, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2644372437731788989, guid: d335c6e0b45f445c099035be67888582, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2644372437731788990, guid: d335c6e0b45f445c099035be67888582, type: 3}
       propertyPath: m_RootOrder
@@ -29368,6 +29471,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2644372437945550222, guid: d335c6e0b45f445c099035be67888582, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2644372438027534022, guid: d335c6e0b45f445c099035be67888582, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2644372438338387572, guid: d335c6e0b45f445c099035be67888582, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d335c6e0b45f445c099035be67888582, type: 3}
 --- !u!1001 &2970588462745475954
@@ -29389,9 +29504,21 @@ PrefabInstance:
       propertyPath: thisLoot
       value: 
       objectReference: {fileID: 11400000, guid: 7c78b6b449a8a4a188c5a6fe7656eeb1, type: 2}
+    - target: {fileID: 1680665767040725665, guid: 7fc4b163e727243478aa1592cc1c24c6, type: 3}
+      propertyPath: enemyHitSound
+      value: 
+      objectReference: {fileID: 1123597369}
+    - target: {fileID: 1680665767040725665, guid: 7fc4b163e727243478aa1592cc1c24c6, type: 3}
+      propertyPath: enemyDeathSound
+      value: 
+      objectReference: {fileID: 1455535987}
     - target: {fileID: 2970588463422294747, guid: 7fc4b163e727243478aa1592cc1c24c6, type: 3}
       propertyPath: m_Name
       value: Normal Log
+      objectReference: {fileID: 0}
+    - target: {fileID: 2970588463422294747, guid: 7fc4b163e727243478aa1592cc1c24c6, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2970588463422294750, guid: 7fc4b163e727243478aa1592cc1c24c6, type: 3}
       propertyPath: m_RootOrder

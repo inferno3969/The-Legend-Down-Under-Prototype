@@ -18,8 +18,8 @@ TagManager:
   - 
   - 
   - Enemy
-  - Minimap
-  - 
+  - Player Projectile
+  - Player
   - 
   - 
   - 
@@ -56,4 +56,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 3367029331
+    locked: 0
+  - name: breakable
+    uniqueID: 3652443669
     locked: 0

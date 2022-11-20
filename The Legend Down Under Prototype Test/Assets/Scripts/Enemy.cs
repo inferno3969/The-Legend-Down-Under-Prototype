@@ -21,6 +21,9 @@ public class Enemy : MonoBehaviour
     public Vector2 homePositon;
     public SignalSender roomSignal;
 
+    public AudioSource enemyHitSound;
+    public AudioSource enemyDeathSound;
+
     public GameObject deathEffect;
     private float deathEffectDelay = 1f;
     public LootTable thisLoot;
@@ -53,7 +56,10 @@ public class Enemy : MonoBehaviour
     private void TakeDamage(float damage)
     {
         health -= damage;
-
+        if (health > 0 && enemyHitSound != null)
+        {
+            enemyHitSound.Play();
+        }
         if (health <= 0)
         {
             DeathEffect();
@@ -72,6 +78,10 @@ public class Enemy : MonoBehaviour
     {
         if (deathEffect != null)
         {
+            if (enemyDeathSound != null)
+            {
+                enemyDeathSound.Play();
+            }
             GameObject effect = Instantiate(deathEffect, transform.position, Quaternion.identity);
             Destroy(effect, deathEffectDelay);
         }

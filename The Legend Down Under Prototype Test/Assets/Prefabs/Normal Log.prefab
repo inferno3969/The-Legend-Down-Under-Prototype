@@ -217,7 +217,11 @@ MonoBehaviour:
   baseAttack: 1
   moveSpeed: 1.5
   homePositon: {x: 0, y: 0}
+  roomSignal: {fileID: 11400000, guid: 840c7d93f70d143f1b33db07c817f732, type: 2}
+  enemyHitSound: {fileID: 0}
+  enemyDeathSound: {fileID: 0}
   deathEffect: {fileID: 1525172928726358266, guid: a695853c09b0a47be9471d6ef881512b, type: 3}
+  thisLoot: {fileID: 11400000, guid: 7c78b6b449a8a4a188c5a6fe7656eeb1, type: 2}
   myRigidbody: {fileID: 2970588463422294748}
   target: {fileID: 0}
   chaseRadius: 4

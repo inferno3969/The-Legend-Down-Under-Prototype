@@ -1871,6 +1871,7 @@ SpriteAtlas:
   - {fileID: -862502056, guid: c966f06aa1b4549acbfca213e437b409, type: 3}
   - {fileID: 21300000, guid: bb44776a63f254e5385e36d404507d4b, type: 3}
   - {fileID: 21300000, guid: ab40a47abbd434a2e9835f953dfa39be, type: 3}
+  - {fileID: 21300000, guid: c9953c8ab8b3b47b6a7638d6a0d4fddf, type: 3}
   - {fileID: 21300000, guid: d47d72ba206814d968bdc7642e9c7138, type: 3}
   - {fileID: 21300000, guid: ff66d3da1524f4e1eb579c9316dbeead, type: 3}
   - {fileID: 21300000, guid: b182873bd9833407888f399ba38db593, type: 3}
@@ -3074,6 +3075,7 @@ SpriteAtlas:
   - {fileID: 947293114, guid: 10b746cc60d5943a0ad1fbe5944c84ca, type: 3}
   - {fileID: 21300000, guid: af1907cc3738a4894b9aeae0cfa641cd, type: 3}
   - {fileID: 21300000, guid: ce61a8cca84bf4dcfaeed6c4efc0ee7c, type: 3}
+  - {fileID: 21300000, guid: 77fc82ec4f40449449fc8ba2014bbed5, type: 3}
   - {fileID: 21300100, guid: fa0d97fcbfef845aeb41f8c3e6bea04c, type: 3}
   - {fileID: 21300102, guid: fa0d97fcbfef845aeb41f8c3e6bea04c, type: 3}
   - {fileID: 21300104, guid: fa0d97fcbfef845aeb41f8c3e6bea04c, type: 3}
@@ -5206,6 +5208,7 @@ SpriteAtlas:
   - character_80
   - Item__41
   - Item__59
+  - bow
   - Item__62
   - Item__54
   - Item__45
@@ -6409,6 +6412,7 @@ SpriteAtlas:
   - Overworld_129
   - Item__68
   - Item__67
+  - arrow
   - cave_50
   - cave_51
   - cave_52
