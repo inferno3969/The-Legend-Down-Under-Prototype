@@ -183,8 +183,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -223695981
-  m_SortingLayer: 2
+  m_SortingLayerID: -927937965
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 873335608, guid: e6524ebd37a5048c4a0ef8bd8797c9c0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -407,7 +407,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 0.6475447
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -466,7 +466,7 @@ MonoBehaviour:
   swordSwing: {fileID: 1788926101}
   isAttacking: 0
   projectile: {fileID: 4512762004465601977, guid: 146528ed260004d7b929eab084b7cc74, type: 3}
-  bow: {fileID: 0}
+  bow: {fileID: 11400000, guid: d5da28a2fc94242f8b029ab2c93be943, type: 2}
   flashColor: {r: 0.9529412, g: 0, b: 0, a: 0.59607846}
   regularColor: {r: 1, g: 1, b: 1, a: 1}
   flashDuration: 0.07

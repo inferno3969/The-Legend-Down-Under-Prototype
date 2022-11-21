@@ -25,7 +25,15 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: a33d5a19b5be64cdabe05591babfaa81, type: 2}
     - target: {fileID: 4456416397723597453, guid: c60f9374eee4a42a59fa7db888f33320, type: 3}
       propertyPath: m_Name
-      value: Small Key Treasure Chest
+      value: Small Key Treasure Chest Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4456416397723597494, guid: c60f9374eee4a42a59fa7db888f33320, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4456416397723597494, guid: c60f9374eee4a42a59fa7db888f33320, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2139108431
       objectReference: {fileID: 0}
     - target: {fileID: 4456416397723597495, guid: c60f9374eee4a42a59fa7db888f33320, type: 3}
       propertyPath: m_RootOrder

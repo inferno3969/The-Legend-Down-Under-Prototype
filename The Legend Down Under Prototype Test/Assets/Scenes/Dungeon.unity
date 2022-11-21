@@ -21841,7 +21841,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 75be248873b9442ca98034dcd9b2e1d5, type: 2}
     - target: {fileID: 1680665767040725665, guid: 7fc4b163e727243478aa1592cc1c24c6, type: 3}
       propertyPath: moveSpeed
-      value: 2
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 1680665767040725665, guid: 7fc4b163e727243478aa1592cc1c24c6, type: 3}
       propertyPath: baseAttack
@@ -23584,10 +23584,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2644372437731788985, guid: d335c6e0b45f445c099035be67888582, type: 3}
-      propertyPath: playerHit
-      value: 
-      objectReference: {fileID: 11400000, guid: 1a3236b3ce56a4a0c859949709cc940d, type: 2}
     - target: {fileID: 2644372437731788989, guid: d335c6e0b45f445c099035be67888582, type: 3}
       propertyPath: m_Name
       value: Player
@@ -23903,6 +23899,14 @@ PrefabInstance:
     - target: {fileID: 674534519503756822, guid: 391fa56e857034d6f85c29b82d722b55, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 674534519503756823, guid: 391fa56e857034d6f85c29b82d722b55, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 674534519503756823, guid: 391fa56e857034d6f85c29b82d722b55, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2139108431
       objectReference: {fileID: 0}
     - target: {fileID: 674534519503756843, guid: 391fa56e857034d6f85c29b82d722b55, type: 3}
       propertyPath: contents

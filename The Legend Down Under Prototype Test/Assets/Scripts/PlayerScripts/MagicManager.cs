@@ -12,6 +12,7 @@ public class MagicManager : MonoBehaviour
     {
         magicSlider.maxValue = playerInventory.currentMagic;
         magicSlider.value = playerInventory.currentMagic;
+        playerInventory.currentMagic = playerInventory.maxMagic;
     }
 
     public void AddMagic()
