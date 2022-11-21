@@ -37,6 +37,10 @@ public class Arrow : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        if (other.gameObject.CompareTag("arrow door"))
+        {
+            Destroy(other.gameObject);
+            Destroy(this.gameObject);
+        }
     }
-
 }

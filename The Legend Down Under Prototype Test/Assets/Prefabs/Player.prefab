@@ -460,6 +460,7 @@ MonoBehaviour:
   currentHealth: {fileID: 11400000, guid: 391871b6341804a92b5b537f28dc2feb, type: 2}
   playerHealthSignal: {fileID: 11400000, guid: 5c07ebe41c699474baa7f5b04af1082a, type: 2}
   playerHit: {fileID: 11400000, guid: 1a3236b3ce56a4a0c859949709cc940d, type: 2}
+  reduceMagic: {fileID: 11400000, guid: 583ccf670a7514289aca85a1003ea164, type: 2}
   playerInventory: {fileID: 11400000, guid: 5fd819300003e4e62bbbcbb3025222cc, type: 2}
   receivedItemSprite: {fileID: 1080929092}
   swordSwing: {fileID: 1788926101}

@@ -185,8 +185,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   context: {fileID: 11400000, guid: 4ece87a6a0baa4c999748f3b93344676, type: 2}
   playerInRange: 0
-  thisDoorType: 0
+  thisDoorType: 1
   open: 0
   playerInventory: {fileID: 11400000, guid: 5fd819300003e4e62bbbcbb3025222cc, type: 2}
   doorSprite: {fileID: 5668798236401679451}
   physicsCollider: {fileID: 5668798236401679450}
+  doorUnlocked: {fileID: 0}
+  dialogBox: {fileID: 0}
+  dialogText: {fileID: 0}
+  dialog: 

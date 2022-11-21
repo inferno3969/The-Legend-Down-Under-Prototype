@@ -14,7 +14,6 @@ public enum PlayerState
 }
 public class PlayerMovement : MonoBehaviour
 {
-
     public PlayerState currentState;
     public float speed;
     public Vector2 velocity = Vector2.zero;
@@ -23,8 +22,12 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
     public VectorValue startingPosition;
     public FloatValue currentHealth;
+
+    [Header("Signals Stuff")]
     public SignalSender playerHealthSignal;
     public SignalSender playerHit;
+    public SignalSender reduceMagic;
+
     public Inventory playerInventory;
     public SpriteRenderer receivedItemSprite;
     public SceneManager gameOver;
@@ -38,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Projectile Stuff")]
     public GameObject projectile;
-    public GameObject bow;
+    public Item bow;
 
     [Header("IFrame stuff")]
     public Color flashColor;
@@ -91,7 +94,10 @@ public class PlayerMovement : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.M) && currentState != PlayerState.attack && currentState != PlayerState.stagger
             && !isAttacking)
         {
-            StartCoroutine(SecondAttackCo());
+            if (playerInventory.CheckForItem(bow))
+            {
+                StartCoroutine(SecondAttackCo());
+            }
         }
         else if (currentState == PlayerState.walk || currentState == PlayerState.idle)
         {
@@ -138,14 +144,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void MakeArrow()
     {
-        //if (playerInventory.currentMagic > 0)
-        //{
+        if (playerInventory.currentMagic > 0)
+        {
             Vector2 temp = new Vector2(animator.GetFloat("moveX"), animator.GetFloat("moveY"));
             Arrow arrow = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Arrow>();
             arrow.Setup(temp, ChooseArrowDirection());
-            //playerInventory.ReduceMagic(arrow.magicCost);
-            //reduceMagic.Raise();
-        //}
+            playerInventory.ReduceMagic(arrow.magicCost);
+            reduceMagic.Raise();
+        }
     }
 
     Vector3 ChooseArrowDirection()

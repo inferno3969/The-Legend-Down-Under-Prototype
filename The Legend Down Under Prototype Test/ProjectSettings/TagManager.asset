@@ -8,6 +8,8 @@ TagManager:
   - enemy
   - sign
   - Ground
+  - arrow door
+  - door
   layers:
   - Default
   - TransparentFX

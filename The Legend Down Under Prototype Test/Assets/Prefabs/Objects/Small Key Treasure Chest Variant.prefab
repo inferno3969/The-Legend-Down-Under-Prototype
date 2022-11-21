@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &418550581092495760
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4456416397723597450, guid: c60f9374eee4a42a59fa7db888f33320, type: 3}
+      propertyPath: contents
+      value: 
+      objectReference: {fileID: 11400000, guid: 689f354f71b20476ebd4571992eda081, type: 2}
+    - target: {fileID: 4456416397723597450, guid: c60f9374eee4a42a59fa7db888f33320, type: 3}
+      propertyPath: dialogBox
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4456416397723597450, guid: c60f9374eee4a42a59fa7db888f33320, type: 3}
+      propertyPath: dialogText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4456416397723597450, guid: c60f9374eee4a42a59fa7db888f33320, type: 3}
+      propertyPath: storedOpen
+      value: 
+      objectReference: {fileID: 11400000, guid: a33d5a19b5be64cdabe05591babfaa81, type: 2}
+    - target: {fileID: 4456416397723597453, guid: c60f9374eee4a42a59fa7db888f33320, type: 3}
+      propertyPath: m_Name
+      value: Small Key Treasure Chest
+      objectReference: {fileID: 0}
+    - target: {fileID: 4456416397723597495, guid: c60f9374eee4a42a59fa7db888f33320, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4456416397723597495, guid: c60f9374eee4a42a59fa7db888f33320, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 4456416397723597495, guid: c60f9374eee4a42a59fa7db888f33320, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 23.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 4456416397723597495, guid: c60f9374eee4a42a59fa7db888f33320, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4456416397723597495, guid: c60f9374eee4a42a59fa7db888f33320, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4456416397723597495, guid: c60f9374eee4a42a59fa7db888f33320, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4456416397723597495, guid: c60f9374eee4a42a59fa7db888f33320, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4456416397723597495, guid: c60f9374eee4a42a59fa7db888f33320, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4456416397723597495, guid: c60f9374eee4a42a59fa7db888f33320, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4456416397723597495, guid: c60f9374eee4a42a59fa7db888f33320, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4456416397723597495, guid: c60f9374eee4a42a59fa7db888f33320, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c60f9374eee4a42a59fa7db888f33320, type: 3}

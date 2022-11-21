@@ -40,6 +40,8 @@ public class MinionNPCDialog : MonoBehaviour
         playSound.Play();
         yield return new WaitForSeconds(4f);
         dialogText.text = "We didn't serve anyone from 1933 to 1945, we were frozen in an ice cave, don't ask.";
+        yield return new WaitForSeconds(4f);
+        dialogText.text = "Speaking of ice cave... if you continue right, you can enter the ice cave... if you dare choose so...";
     }
 
     private void OnTriggerEnter2D(Collider2D other)
